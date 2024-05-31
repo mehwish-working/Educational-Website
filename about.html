@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our School Website</title>
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <style>  
+    .text-content {
+      padding: 30px;
+      color: brown;
+    }
+    .image-content img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* OUR MISSION SECTION */
+    .mission-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .mission-content {
+            text-align: center;
+        }
+
+        .mission-title {
+          font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            color: tomato;
+            text-align: center;
+            margin-top: 70px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .mission-description {
+            font-size: 18px;
+            color: #666;
+        }
+        /* ----------------------------------------------------------- */
+     /* HEADING SECTION */
+     .container-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .row-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .image-container {
+      flex: 1;
+    }
+
+    .image {
+      border-radius: 3px;
+      margin: -9px;
+      width: 100%;
+      height: auto;
+    }
+
+    .text-container {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .text h2 {
+      color: blueviolet;
+      font-size: 40px;
+
+    }
+
+    .text p {
+      color: rgb(60, 43, 75);
+      font-size: 20px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .text-container {
+        padding: 20px 0;
+      }
+    }
+    /* -------------------------------------------------------- */
+    /* MORE SECTION */
+    .about-section {
+            padding: 35px 0;
+            background-color: #f8f9fa;
+        }
+
+        .about-heading {
+            margin-bottom: 30px;
+        }
+
+        .about-content {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 60px 0;
+            }
+        }
+    /* ------------------------------------------------------------------ */
+      /* FOOTER SECTION */
+      .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 30px 0;
+    }
+
+    .footer ul li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    /* -------------------------------------------------------------- */
+    .navbar-toggler:hover {
+    border-color: white !important;
+}
+.navbar-nav .nav-link:hover {
+  color: #f67c7c !important;
+  transition: transform 0.3s ease !important;
+  /* transform: translateY(-5px) !important; */
+  /* background-color: white !important; */
+}
+.hoverButton:hover{
+  color: black !important;
+  background-color: white !important;
+}
+.heading{
+  font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            color: tomato;
+            text-align: center;
+            margin-top: 70px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.paraCustom{
+  color: rgb(255, 0, 55);
+      font-size: 18px;
+}
+.paraCustom:hover{
+  color: rgb(28, 1, 88);
+      font-size: 20px;
+      cursor: pointer;
+}
+</style>
+    
+</head>
+
+<body>
+    <!-- Our Header Section Start -->
+    <header>
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background: rgb(0, 0, 0);
+        background: linear-gradient(45deg, rgb(98, 69, 91) 0%, rgb(37, 87, 70) 15%, rgb(106, 7, 90) 65%, rgb(104, 57, 15) 100%);">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="/images/logo.png" alt="" width="80px" height="80px"
+            style="border-radius: 50%;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: white; font-weight: bold; font-size: 22px;">Home</a>
+            <a class="nav-link" href="about.html" style="color: white; font-weight: bold; font-size: 22px;" >About</a>
+            <!-- <a class="nav-link" href="courses.html" style="color: white; font-weight: bold; font-size: 22px;" >Courses</a> -->
+            <a class="nav-link" href="library.html" style="color: white; font-weight: bold; font-size: 22px;" >Library</a>
+            <a class="nav-link" href="certificates.html" style="color: white; font-weight: bold; font-size: 22px;" >Certificates</a>
+            <a class="nav-link" href="gallery.html" style="color: white; font-weight: bold; font-size: 22px;" >Gallery</a>
+            <a class="nav-link" href="profile.html" style="color: white; font-weight: bold; font-size: 22px;" >Profile</a>
+            <a class="nav-link" href="contactus.html" style="color: white; font-weight: bold; font-size: 22px;" >Contact Us</a>
+            <a href="/signUp.html" class="btn btn-primary btn-lg hoverButton" style="background-color: transparent; border-radius: 20px; width: 115px;">Sign Up</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+        <!-- --------------------------------------------------- -->
+       
+    </header>
+    <!-- Our Header Section End -->
+
+
+
+    <main>
+        <!-- Our main Section Start -->
+        <div class="container">
+          <div class="row mt-4">
+            <div class="col-md-6 text-content">
+              <h2 class="heading">About Us</h2><br>
+              <p class="paraCustom">An investment in knowledge pays the best interest.</p>
+              <p class="paraCustom">The function of education is to teach one to think intensively and to think critically. Intelligence plus character - that is the goal of true education.</p>
+              <p class="paraCustom">Academic excellence entails embracing challenges and viewing setbacks as opportunities for growth and learning rather than obstacles.</p>
+            </div>
+            <div class="col-md-6 image-content"><br><br>
+              <img src="/images//signup.jpg" alt="Placeholder Image" style="border-radius: 30px;">
+            </div>
+          </div>
+        </div>
+        <!-- --------------------------------------------------------- -->
+
+        <!-- Our Mission Section -->
+        <br><br>
+        <section class="mission-section">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 offset-lg-2">
+                      <div class="mission-content">
+                          <h2 class="mission-title">Our Sincere School's Mission</h2>
+                          <p class="mission-description">
+                            Our School Mission embodies our commitment to excellence in education. Through fostering a supportive and inclusive learning environment, we aim to empower students to reach their fullest potential academically, socially, and emotionally. </p>
+                            <p class="mission-description">Our mission is to cultivate critical thinking, creativity, and a lifelong passion for learning, equipping students with the skills and knowledge necessary for success in an ever-changing world.</p>
+                              <p class="mission-description">Join us on our mission to inspire, educate, and empower every student to thrive and make a positive difference in the world. </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- --------------------------------------------------------- -->
+            <!-- HEADING SECTION -->
+            <div class="container">
+              <div class="row mt-4">
+                <div class="col-md-6 text-content">
+                  <h1 style="font-family: 'Arial', sans-serif;
+                  font-size: 36px;
+                  color: tomato;
+                  text-align: center;
+                  margin-top: 70px;
+                  font-weight: bold;
+                  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Support For Education</h1><br>
+                  <p style="font-size: 18px;">Established in Faislabad in 2003, The Sincere School is today one of the largest private school networks across the globe. Having more than 500 schools with over 150,000 students, we continue to expand our reach in other countries including United Arab Emirates, Malaysia, Philippines, Oman, and Saudi Arabia, to meet the demands for quality education as well as to ensure a strong global presence.</p>
+                </div>
+                <div class="col-md-6 image-content">
+                  <img src="/images/fe1.png" alt="Placeholder Image" style="border-radius: 30px;">
+                </div>
+              </div>
+            </div>
+    <!-- --------------------------------------------------- -->
+<!-- MORE SECTION  -->
+<section class="about-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-8 mx-auto">
+              <h2 class="about-heading text-center" style="font-family: 'Arial', sans-serif;
+              font-size: 36px;
+              color: tomato;
+              text-align: center;
+              margin-top: 70px;
+              font-weight: bold;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);" >More</h2>
+              <p class="about-content text-center" style="color: brown; font-size: 20px;">The only person who is educated is the one who has learned how to learn and change.</p>
+              <p class="about-content text-center" style="color: brown; font-size: 20px;">An investment in knowledge pays the best interest.Live as if you were to die tomorrow. Learn as if you were to live forever.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+        <!-- Our main Section End -->
+    </main>
+<!-- FOOTER SECTION -->
+<footer class="footer" style="background: rgb(0, 0, 0);
+background: linear-gradient(45deg, rgb(98, 69, 91) 0%, rgb(37, 87, 70) 15%, rgb(106, 7, 90) 65%, rgb(104, 57, 15) 100%);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Contact Us</h5>
+        <ul class="list-unstyled">
+          <li>🏫 Address: 123 School Street, City, Country</li>
+          <li>📧 Email: info@school.com</li>
+          <li>📞 Call Us: +1234567890</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>Follow Us</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-facebook-f"></i>Facebook</a></li><br>
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-twitter"></i>Twitter</a></li><br>
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-instagram"></i>Instagram</a></li><br>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER END -->
+    <!-- Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

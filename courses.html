@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our School Website</title>
+  <!-- Bootstrap CSS Link -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body{
+      background-color: rgb(225, 254, 217);
+    }
+    .library-content h2,
+    p {
+      display: flex;
+      justify-content: center;
+    }
+
+    .library-content {
+      margin: 81px;
+      color: brown;
+    }
+
+    /* styles.css */
+    .card {
+      margin-bottom: 20px;
+      background:transparent;
+        background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 15%, rgb(255, 255, 255) 65%, rgb(59, 249, 1) 100%);
+     
+    }
+
+  .card img {
+    border-radius: 33px;
+    display: block;
+    margin: auto;
+    height: 255px;
+}
+    
+    .card img{
+      width:75%;
+      height: 200px;
+      margin:5px;
+      padding: 15px;
+    }
+    .card-body p{
+      font-size: 12px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+    }
+    .onHover:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+        /* FOOTER SECTION */
+        .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 30px 0;
+    }
+
+    .footer ul li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    /* -------------------------------------------------------------- */
+     /* at the end SECTION */
+     .mission-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .mission-content {
+            text-align: center;
+        }
+
+        .mission-title {
+          font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            color: tomato;
+            text-align: center;
+            margin-top: 70px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .mission-description {
+            font-size: 18px;
+            color: #666;
+        }
+        /* ----------------------------------------------------------- */
+    /* ---------------------------------------------------------- */
+
+    .navbar-toggler:hover {
+    border-color: white !important;
+}
+.navbar-nav .nav-link:hover {
+  color: #f67c7c !important;
+  transition: transform 0.3s ease !important;
+  /* transform: translateY(-5px) !important; */
+  /* background-color: white !important; */
+}
+.hoverButton:hover{
+  color: black !important;
+  background-color: white !important;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Our Header Section Start -->
+  <header>
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light "
+      style="background: rgb(0, 0, 0);
+        background: linear-gradient(45deg, rgb(98, 69, 91) 0%, rgb(37, 87, 70) 15%, rgb(106, 7, 90) 65%, rgb(104, 57, 15) 100%);">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="/images/logo.png" alt="" width="80px" height="80px"
+            style="border-radius: 50%;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: white; font-weight: bold; font-size: 22px;">Home</a>
+            <a class="nav-link" href="about.html" style="color: white; font-weight: bold; font-size: 22px;" >About</a>
+            <a class="nav-link" href="courses.html" style="color: white; font-weight: bold; font-size: 22px;" >Courses</a>
+            <a class="nav-link" href="library.html" style="color: white; font-weight: bold; font-size: 22px;" >Library</a>
+            <a class="nav-link" href="certificates.html" style="color: white; font-weight: bold; font-size: 22px;" >Certificates</a>
+            <a class="nav-link" href="gallery.html" style="color: white; font-weight: bold; font-size: 22px;" >Gallery</a>
+            <a class="nav-link" href="profile.html" style="color: white; font-weight: bold; font-size: 22px;" >Profile</a>
+            <a class="nav-link" href="contactus.html" style="color: white; font-weight: bold; font-size: 22px;" >Contact Us</a>
+            <a href="/signUp.html" class="btn btn-primary btn-lg hoverButton" style="background-color: transparent; border-radius: 20px; width: 115px;">Sign Up</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+      <!-- --------------------------------------------------- -->
+  </header>
+  <!-- Our Header Section End -->
+
+
+
+  <main>
+    <!-- Our main Section Start -->
+    <div class="library-content">
+      <h1 style="width: 80%; margin: 0 auto; font-family: 'Arial', sans-serif;
+      font-size: 36px;
+      color: tomato;
+      text-align: center;
+      margin-top: 70px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Our Courses</h1><br>
+      <h5 style="color: red;text-align: center;">With a focus on holistic development, we strive to instill values of integrity, respect, and responsibility, preparing students to become compassionate global citizens and leaders of tomorrow.</h5>
+    </div>
+
+
+
+
+    <div class="container">
+      <h1 style="width: 30%; margin:0 auto; font-size: 36px;
+      color: tomato; font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Batch 01 Courses</h1><br><br>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 ">
+          <div class="card onHover">
+            <img src="/images/ecommerce.png" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce Full Course</h5>
+              <p class="card-text">Enter To Learn and Exit To Earn</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2uALv956d8W888KvvrdxrOeLaB3lyp50J1OFXaR5HXOP32A/viewform?usp=sf_link" class="btn btn-primary hoverButton">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card onHover">
+            <img src="/images/seo.png" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">SEO Full Course</h5>
+              <p class="card-text">Enter To Learn and Exit To Earn</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2uALv956d8W888KvvrdxrOeLaB3lyp50J1OFXaR5HXOP32A/viewform?usp=sf_link" class="btn btn-primary hoverButton">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card onHover">
+            <img src="/images/stit.jpg" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">Stitching Full Course</h5>
+              <p class="card-text">Enter To Learn and Exit To Earn</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2uALv956d8W888KvvrdxrOeLaB3lyp50J1OFXaR5HXOP32A/viewform?usp=sf_link" class="btn btn-primary hoverButton">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <h1 style="width: 30%; margin:0 auto; font-size: 36px;
+      color: tomato; font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Batch 02 Courses</h1><br><br>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card onHover">
+            <img src="./images/word.png" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">WordPress Full Course</h5>
+              <p class="card-text">Enter To Learn and Exit To Earn</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2uALv956d8W888KvvrdxrOeLaB3lyp50J1OFXaR5HXOP32A/viewform?usp=sf_link" class="btn btn-primary hoverButton">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card onHover">
+            <img src="/images/eng.jpg" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">English Spoken Full Course</h5>
+              <p class="card-text">Enter To Learn and Exit To Earn</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2uALv956d8W888KvvrdxrOeLaB3lyp50J1OFXaR5HXOP32A/viewform?usp=sf_link" class="btn btn-primary hoverButton">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card onHover">
+            <img src="/images/dm.jpg" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">Digital Marketing Full Course</h5>
+              <p class="card-text">Enter To Learn and Exit To Earn</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2uALv956d8W888KvvrdxrOeLaB3lyp50J1OFXaR5HXOP32A/viewform?usp=sf_link" class="btn btn-primary hoverButton">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <h1 style="width: 30%; margin:0 auto; font-size: 36px;
+      color: tomato; font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Batch 03 Courses</h1><br><br>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card onHover">
+            <img src="/images/gra.jpg" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">Graphics Full Course</h5>
+              <p class="card-text">Enter To Learn and Exit To Earn</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2uALv956d8W888KvvrdxrOeLaB3lyp50J1OFXaR5HXOP32A/viewform?usp=sf_link" class="btn btn-primary hoverButton">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card onHover">
+            <img src="/images/drawing.jpg" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">Drawing Full Course</h5>
+              <p class="card-text">Enter To Learn and Exit To Earn</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2uALv956d8W888KvvrdxrOeLaB3lyp50J1OFXaR5HXOP32A/viewform?usp=sf_link" class="btn btn-primary hoverButton">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card onHover">
+            <img src="/images/mob.jpg" class="card-img-top" alt="Course Image">
+            <div class="card-body">
+              <h5 class="card-title">Mobile Application Full Course</h5>
+              <p class="card-text">Enter To Learn and Exit To Earn</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2uALv956d8W888KvvrdxrOeLaB3lyp50J1OFXaR5HXOP32A/viewform?usp=sf_link" class="btn btn-primary hoverButton">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------ -->
+
+
+    <section class="mission-section">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 offset-lg-2">
+                  <div class="mission-content">
+                      <h2 class="mission-title">Creating a Study Schedule:</h2>
+                      <p class="mission-description">
+                        Establishing a study schedule helps students allocate time for different subjects and assignments. A well-structured schedule allows for regular breaks, which are essential for maintaining focus and preventing burnout. Furthermore, prioritizing tasks based on urgency and importance ensures efficient use of study time. </p>
+                        <h2 class="mission-title">Effective Note-Taking Strategies:</h2>
+                        <p class="mission-description">Taking organized and concise notes during lectures or while reading helps reinforce learning and aids in comprehension. Students can use techniques such as the Cornell method, mind mapping, or bullet points to capture key concepts. Reviewing and revising notes regularly can further solidify understanding.</p>
+                        <h2 class="mission-title">Common Study Problems:</h2>
+                          <p class="mission-description">Students often encounter challenges while studying. These can range from lack of motivation and distractions to difficulties concentrating and remembering information. Addressing these issues requires strategies such as setting specific goals, creating a conducive study environment, using mnemonic devices, and seeking support from peers or educators.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- Our main Section End -->
+  </main>
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer" style="background: rgb(0, 0, 0);
+background: linear-gradient(45deg, rgb(98, 69, 91) 0%, rgb(37, 87, 70) 15%, rgb(106, 7, 90) 65%, rgb(104, 57, 15) 100%);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Contact Us</h5>
+        <ul class="list-unstyled">
+          <li>🏫 Address: 123 School Street, City, Country</li>
+          <li>📧 Email: info@school.com</li>
+          <li>📞 Call Us: +1234567890</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>Follow Us</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-facebook-f"></i>Facebook</a></li><br>
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-twitter"></i>Twitter</a></li><br>
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-instagram"></i>Instagram</a></li><br>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER END -->
+
+
+  <!-- Bootstrap JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

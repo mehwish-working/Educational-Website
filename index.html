@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our School Website</title>
+  <!-- Bootstrap CSS Link -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  integrity="sha512-q8W5HRKVD6lAx7KW/TPDl2p7tqmHBi+Z9NJOEvCZbPT1YJz+Ll4vn7wE13L0B6L8TqRVuGYvnxWxQK6BhukT/w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sevillana&display=swap" rel="stylesheet">
+
+ 
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+    .text-content {
+      padding: 30px;
+      color: brown;
+    }
+    .image-content img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .text-container {
+        padding: 20px 0;
+      }
+    }
+
+
+
+    .text-content ul li{
+      color: rgb(255, 0, 55);
+      font-size: 18px;
+    }
+    .text-content ul li:hover{
+      color: rgb(28, 1, 88);
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+/*------------------------------------------------------------------ */
+
+    /* HERO SECTION */
+    .hero-section {
+      background-image: url("/images/backImage.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+    }
+    /* --------------------- */
+    .cardhover:hover{
+      box-shadow: 0 4px 8px rgb(161, 159, 159) !important;
+    }
+    /* ----------------------------------------------------------------- */
+    /* at the end SECTION */
+    .mission-section {
+            background-color: #f0f7fe;
+            padding: 50px 0;
+        }
+
+        .mission-content {
+            text-align: center;
+        }
+
+        .mission-title {
+          font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            color: tomato;
+            text-align: center;
+            margin-top: 70px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .mission-description {
+            font-size: 18px;
+            color: #666;
+        }
+        /* ----------------------------------------------------------- */
+        /* ATTENDENCE SYSTEM */
+        /* Custom CSS for responsiveness */
+    @media (max-width: 768px) {
+      .form-group {
+        margin-bottom: 15px;
+      }
+    }
+
+ 
+    /*---------------------------------------------------------------- */
+    /* FOOTER SECTION */
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 30px 0;
+    }
+
+    .footer ul li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    /* -------------------------------------------------------------- */
+    .navbar-toggler:hover {
+    border-color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f67c7c !important;
+  transition: transform 0.3s ease !important;
+}
+.hoverButton:hover{
+  color: black !important;
+  background-color: white !important;
+  font-weight: bold !important;
+}
+/* ---------------------------------------------------------- */
+.zoom-in {
+            transition: transform 0.3s ease; /* Add smooth transition */
+            font-family: 'Arial', sans-serif;
+            font-size: 20px;
+            color: tomato;
+            text-align: center;
+            margin-top: 12rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: zoom-in-zoom-out 3s ease infinite;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+        .zoom-in:hover {
+            transform: scale(1.1); /* Zoom in by 10% on hover */
+        }
+
+/* ----------------------------------------------------- */
+.onHover:hover{
+  box-shadow: 0 4px 8px rgb(161, 159, 159) !important;
+  color: black;
+  background-color: white;
+  font-weight: bold !important;
+}
+.para{
+  font-family: "Rubik", sans-serif;
+  /* letter-spacing: 2px; */
+            font-size: 28px;
+            /* line-height: 1.6; */
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding: 10px;
+            /* background-color: transparent; */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.para:hover{
+  box-shadow: 3px 3px 3px 1px rgba(255, 157, 157, 0.5);
+
+}
+/* Listing */
+.listHeading{
+   color: rgb(247, 5, 150);
+   cursor: pointer;
+   display: inline;
+}
+.listHeading:hover{
+  color: rgb(85, 255, 0);
+}
+/* ---------------------------------------------------------- */
+.eventAndCourse{
+  color: brown;
+   cursor: pointer;
+}
+.eventAndCourse:hover{
+   color: blue;
+   font-weight: bold;
+
+}
+@media (max-width:768px) {
+  .zoominHide{
+    display: none;
+  }
+  
+}
+
+        
+  </style>
+</head>
+
+<body>
+  <!-- Our Header Section Start -->
+  <header>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" 
+      style="background: rgb(0, 0, 0);
+        background: linear-gradient(45deg, rgb(98, 69, 91) 0%, rgb(37, 87, 70) 15%, rgb(106, 7, 90) 65%, rgb(104, 57, 15) 100%);">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="/images/logo.png" alt="" width="80px" height="80px"
+            style="border-radius: 50%;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: white; font-weight: bold; font-size: 22px;">Home</a>
+            <a class="nav-link" href="about.html" style="color: white; font-weight: bold; font-size: 22px;" >About</a>
+            <!-- <a class="nav-link" href="courses.html" style="color: white; font-weight: bold; font-size: 22px;" >Courses</a> -->
+            <a class="nav-link" href="library.html" style="color: white; font-weight: bold; font-size: 22px;" >Library</a>
+            <a class="nav-link" href="certificates.html" style="color: white; font-weight: bold; font-size: 22px;" >Certificates</a>
+            <a class="nav-link" href="gallery.html" style="color: white; font-weight: bold; font-size: 22px;" >Gallery</a>
+            <a class="nav-link" href="profile.html" style="color: white; font-weight: bold; font-size: 22px;" >Profile</a>
+            <a class="nav-link" href="contactus.html" style="color: white; font-weight: bold; font-size: 22px;" >Contact Us</a>
+            <a href="/signUp.html" class="btn btn-primary btn-lg hoverButton" style="background-color: transparent; border-radius: 20px; width: 115px;">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h1 class="zoom-in zoominHide" style="color: white; -webkit-text-stroke:1px black;">Welcome to Our Sincere School</h1><br>
+            <p class="para " style="color: white;">Access to quality education is a fundamental human right, essential for fostering equality, promoting economic development, and building inclusive societies.</p><br>
+            <a href="/about.html" class="btn btn-danger btn-lg onHover">Read More &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------------------------------- -->
+  </header>
+  <!-- MAIN SECTION -->
+  <main><br><br><br>
+    <!-- LISTING SECTION -->
+    <section class="main-section mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="listHeading">Our Courses</h2><br><br>
+            <p style="font-weight: bold; font-size: 20px;">Explore a wide range of courses tailored to your educational
+              needs.</p>
+            <ul type="circle">
+              <p class="eventAndCourse">  &#x2605; Programming</p>
+              <p class="eventAndCourse">  &#x2605; Web Development</p>
+              <p class="eventAndCourse">  &#x2605; Data Science</p>
+              <p class="eventAndCourse">  &#x2605; Graphic Design</p>
+              <p class="eventAndCourse">  &#x2605; E_Commerce</p>
+              <p class="eventAndCourse">  &#x2605; Business Management</p>
+              <p class="eventAndCourse">  &#x2605; Spoken English</p>
+            </ul>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-5">
+            <h2  class="listHeading">Upcoming Events</h2><br><br>
+            <p style="font-weight: bold; font-size: 20px;">Stay updated with our upcoming educational events and
+              workshops.</p>
+            <ul type="circle">
+              <p class="eventAndCourse"> &#x2605; Sports Day - April 15th</p>
+              <p class="eventAndCourse"> &#x2605; Science Fair - May 3rd</p>
+              <p class="eventAndCourse"> &#x2605;  Festival - May 20th</p>
+              <p class="eventAndCourse"> &#x2605; Open House - Jan 20th</p>
+              <p class="eventAndCourse"> &#x2605; Book Fair - June 12th</p>
+              <p class="eventAndCourse"> &#x2605; Career Day - June 5th</p>
+              <p class="eventAndCourse"> &#x2605; Community Service Day - June 5th</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------------------------------------- -->
+
+    <!-- Staff Section -->
+    <section class="staff-members-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 zoom-in">Our Staff Members</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 cardhover">
+              <img src="images/pro1.webp" class="card-img-top" style="background-color: rgb(247, 223, 242); cursor: pointer;" alt="Staff Member 1" width="100px">
+              <div class="card-body">
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-text">Principal</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 cardhover">
+              <img src="/images/pro2.webp" class="card-img-top" style="background-color: rgb(247, 223, 242); cursor: pointer;" alt="Staff Member 2" width="100px">
+              <div class="card-body">
+                <h5 class="card-title">Jane Smith</h5>
+                <p class="card-text">Vice Principal</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 cardhover">
+              <img src="/images/pro4.webp" class="card-img-top" style="background-color: rgb(247, 223, 242); cursor: pointer;" alt="Staff Member 4" width="100px">
+              <div class="card-body">
+                <h5 class="card-title">Michael Johnson</h5>
+                <p class="card-text">Teacher</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------ -->
+    <!-- QUOTES SECTION -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4" style="color: brown; font-size: 20px;">
+          <details>
+            <summary>Read More</summary>
+            <ul>
+              <li style="color: black!important; font-size: 18px;">"The roots of education are bitter, but the fruit is sweet."</li>
+              <li style="color: black!important; font-size: 18px;">"The more that you read, the more things you will know. The more that you learn, the more places you’ll go."</li>
+            </ul>
+          </details>
+        </div>
+        <div class="col-md-6 mb-4" style="color: brown; font-size: 20px;">
+          <details>
+            <summary>Click Here</summary>
+            <ul>
+              <li style="color: black!important; font-size: 18px;">"Education is the most powerful weapon you can use to change the world."</li>
+              <li style="color: black!important; font-size: 18px;">"The roots of education are bitter, but the fruit is sweet."</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------- -->
+    
+  <!-- -------------------------------------------------------------- -->
+<section style="background-color: #e7ecff;padding-top: 2px;padding-bottom: 3px; border-radius: 20px;">
+  <div class="container mt-5">
+    <h1 class="text-center mb-4 zoom-in">School Attendance System</h1>
+    
+    <form id="attendanceForm">
+      <div class="form-group row">
+        <label for="studentName" class="col-sm-2 col-form-label">Student Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control onHover" id="studentName" placeholder="Enter student's name" required>
+        </div>
+      </div><br>
+      <div class="form-group row">
+        <label for="studentID" class="col-sm-2 col-form-label">Student ID:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control onHover" id="studentID" placeholder="Enter student's ID" required>
+        </div>
+      </div><br>
+      <div class="form-group row">
+        <label for="courseID" class="col-sm-2 col-form-label">Subject/Course:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control onHover" id="courseID" placeholder="Enter Subject/Course Name" required>
+        </div>
+      </div><br>
+      <div class="form-group row">
+        <label for="timingID" class="col-sm-2 col-form-label">Timing:</label>
+        <div class="col-sm-10">
+          <input type="time" class="form-control onHover" id="timingID" placeholder="Enter Time" required>
+        </div>
+      </div><br>
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="button" class="btn btn-danger onHover" onclick="markAttendance()">Mark Attendance &#x2705;</button>
+        </div>
+      </div>
+    </form>
+  
+    <div class="mt-4" id="attendanceList"></div>
+  </div>
+</section>
+  <!-- ----------------------------------------------------- -->
+  <section class="mission-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="mission-content">
+                    <h2 class="mission-title">Creating a Study Schedule:</h2>
+                    <p class="mission-description">
+                      Establishing a study schedule helps students allocate time for different subjects and assignments. A well-structured schedule allows for regular breaks, which are essential for maintaining focus and preventing burnout. Furthermore, prioritizing tasks based on urgency and importance ensures efficient use of study time. </p>
+                      <h2 class="mission-title">Effective Note-Taking Strategies:</h2>
+                      <p class="mission-description">Taking organized and concise notes during lectures or while reading helps reinforce learning and aids in comprehension. Students can use techniques such as the Cornell method, mind mapping, or bullet points to capture key concepts. Reviewing and revising notes regularly can further solidify understanding.</p>
+                      <h2 class="mission-title">Common Study Problems:</h2>
+                        <p class="mission-description">Students often encounter challenges while studying. These can range from lack of motivation and distractions to difficulties concentrating and remembering information. Addressing these issues requires strategies such as setting specific goals, creating a conducive study environment, using mnemonic devices, and seeking support from peers or educators.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><br>
+
+  
+    <!-- ---------------------------------------------------------- -->
+    <!-- LOG IN & SIGN UP SECTION HERE! -->
+    <div class="container" id="logIn">
+      <div class="row">
+          <div class="col-12">
+              <h1 class="display-4 text-center mt-5 animated-heading" style="font-family: 'Arial', sans-serif;
+              font-size: 36px;
+              color: tomato;
+              text-align: center;
+              margin-top: 70px;
+              font-weight: bold;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">LOG IN HERE</h1>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card onHover">
+          <div class="card-header text-center">
+            Log In To Enroll Courses
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div><br>
+            <a href="/courses.html" class="btn btn-danger btn-lg onHover" id="loginButton">Log In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+    
+
+    <!-- ------------------------------------------------------ -->
+            <!-- HEADING SECTION -->
+            <div class="container">
+              <div class="row mt-4">
+                <div class="col-md-6 text-content">
+                  <h1 style="font-family: 'Arial', sans-serif;
+                  font-size: 36px;
+                  color: tomato;
+                  text-align: center;
+                  margin-top: 70px;
+                  font-weight: bold;
+                  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Engage Us</h1><br>
+                  <ul>
+                    <li>An investment in knowledge pays the best interest.</li>
+                  <li>The function of education is to teach one to think intensively and to think critically. Intelligence plus character - that is the goal of true education.</li>
+                  <li>It involves active engagement in the learning process, including participation in class discussions, asking questions, and seeking clarification on challenging topics.</li>
+                  </ul>
+                  <br>
+                  <a href="/library.html" class="btn btn-danger btn-lg onHover">Go To Library &rarr;</a>
+                </div>
+                <div class="col-md-6 image-content">
+                  <img src="/images/fe1.png" alt="Placeholder Image" style="border-radius: 30px;">
+                </div>
+              </div>
+            </div>
+    <!-- --------------------------------------------------- ---->
+  </main>
+
+<!-- FOOTER SECTION -->
+<footer class="footer" style="background: rgb(0, 0, 0);
+background: linear-gradient(45deg, rgb(98, 69, 91) 0%, rgb(37, 87, 70) 15%, rgb(106, 7, 90) 65%, rgb(104, 57, 15) 100%);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Contact Us</h5>
+        <ul class="list-unstyled">
+          <li>🏫 Address: 123 School Street, City, Country</li>
+          <li>📧 Email: info@school.com</li>
+          <li>📞 Call Us: +1234567890</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>Follow Us</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-facebook-f"></i>Facebook</a></li><br>
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-twitter"></i>Twitter</a></li><br>
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-instagram"></i>Instagram</a></li><br>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER END -->
+  <!-- Bootstrap JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+  integrity="sha512-fVZB4IhCX/po4RrQp0E8c/sv0vEPCZfYq5bWL5kmFHFVtZqJ++oqmZuEsUw91jQ4MHTijpK7cUzTTFCYTyJkfw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get the login button
+    var loginButton = document.getElementById('loginButton');
+
+    // Add event listener for button click
+    loginButton.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      // Get the email and password input fields
+      var emailInput = document.getElementById('email');
+      var passwordInput = document.getElementById('password');
+
+      // Check if both fields are filled
+      if (emailInput.value.trim() !== '' && passwordInput.value.trim() !== '') {
+        // Redirect to the next page
+        window.location.href = '/courses.html';
+      } else {
+        // Show alert message if fields are not filled
+        alert('Please enter both email and password');
+      }
+    });
+  });
+</script>
+
+
+
+
+  <script>
+    function markAttendance() {
+      var studentName = document.getElementById('studentName').value;
+      var studentID = document.getElementById('studentID').value;
+      var studentSubject = document.getElementById('courseID').value;
+      var time = document.getElementById('timingID').value;
+
+      var attendanceList = document.getElementById('attendanceList');
+      
+      // Create a new list item for the attendance
+      var listItem = document.createElement('li');
+      listItem.textContent = studentName + ' (ID: ' + studentID + ')   '+ 'Course: ' + studentSubject + '   Time:' +time;
+      attendanceList.appendChild(listItem);
+      
+      // Clear the input fields
+      document.getElementById('studentName').value = '';
+      document.getElementById('studentID').value = '';
+      document.getElementById('courseID').value = '';
+      document.getElementById('timingID').value = '';
+    }
+  </script>
+  
+  
+
+</body>
+
+</html>

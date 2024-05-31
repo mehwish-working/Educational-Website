@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Bootstrap CSS Link -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <style>
+    body{
+      background-color: rgb(232, 255, 255);
+    }
+    .library-content h4, p{
+    display: flex ; justify-content:center;
+  }
+  .library-content{
+    margin: 81px;
+    color: brown;
+  }
+    /* ------------------------------------------------------------------ */
+    .containerCard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .book {
+    background: rgb(233, 237, 215);
+    width: 30%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .book h2{
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+  }
+  .book p{
+    font-size: 18px;
+  }
+  .book img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+  }
+  @media (max-width: 768px) {
+    .book {
+      width: 45%;
+    }
+  }
+  @media (max-width: 480px) {
+    .book {
+      width: 100%;
+    }
+  }
+  .onHover:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.btn-success{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-success:hover{
+  color: green;
+  background-color: white;
+}
+  /* ---------------------------------------------------- */
+      /* FOOTER SECTION */
+      .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 30px 0;
+    }
+
+    .footer ul li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    /* -------------------------------------------------------------- */
+    .navbar-toggler:hover {
+    border-color: white !important;
+}
+.navbar-nav .nav-link:hover {
+  color: #f67c7c !important;
+  transition: transform 0.3s ease !important;
+  /* transform: translateY(-5px) !important; */
+  /* background-color: white !important; */
+}
+.hoverButton:hover{
+  color: black !important;
+  background-color: white !important;
+}
+  </style>
+</head>
+<body>
+    <header>
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light "
+      style="background: rgb(0, 0, 0);
+        background: linear-gradient(45deg, rgb(98, 69, 91) 0%, rgb(37, 87, 70) 15%, rgb(106, 7, 90) 65%, rgb(104, 57, 15) 100%);">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="/images/logo.png" alt="" width="80px" height="80px"
+            style="border-radius: 50%;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: white; font-weight: bold; font-size: 22px;">Home</a>
+            <a class="nav-link" href="about.html" style="color: white; font-weight: bold; font-size: 22px;" >About</a>
+            <!-- <a class="nav-link" href="courses.html" style="color: white; font-weight: bold; font-size: 22px;" >Courses</a> -->
+            <a class="nav-link" href="library.html" style="color: white; font-weight: bold; font-size: 22px;" >Library</a>
+            <a class="nav-link" href="certificates.html" style="color: white; font-weight: bold; font-size: 22px;" >Certificates</a>
+            
+            <a class="nav-link" href="profile.html" style="color: white; font-weight: bold; font-size: 22px;" >Profile</a>
+            <a class="nav-link" href="contactus.html" style="color: white; font-weight: bold; font-size: 22px;" >Contact Us</a>
+            <a href="/signUp.html" class="btn btn-primary btn-lg hoverButton" style="background-color: transparent; border-radius: 20px; width: 115px;">Sign Up</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+      <!-- --------------------------------------------------- -->
+  </header>
+<main>
+       <!-- Our main Section Start -->
+       <div class="library-content">
+        <h1 style="font-family: 'Arial', sans-serif;
+        font-size: 36px;
+        color: tomato;
+        text-align: center;
+        margin-top: 70px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Welcome To Our Library!</h1>
+        <h4>Education is not preparation for life; Education is life itself.</h4>
+        <p>Our school serves as a place for learning the future of individuals and society.</p>
+    </div>
+
+      <!-- CARDS SECTION START -->
+      <div class="containerCard">
+        <div class="book onHover">
+          <img src="/images/art.jpg" alt="book1">
+          <br>
+          <h2>Reading Minds</h2>
+          <p>Author:  Henrik Fexeus</p>
+          <a href="https://forms.gle/Cm51sAdEknhmMBA78" class="btn btn-success btn-lg">Order Now &rarr;</a>
+        </div>
+        <div class="book onHover">
+          <img src="/images/lolita.jpg" alt="book1">
+          <br>
+          <h2>Lolita</h2>
+          <p>Author:  Vladimir Nabokov</p>
+          <a href="https://forms.gle/Cm51sAdEknhmMBA78" class="btn btn-success btn-lg">Order Now &rarr;</a>
+        </div>
+        <div class="book onHover">
+          <img src="/images/third.jpg" alt="book1">
+          <br>
+          <h2>Third World</h2>
+          <p>Author: Peter Worsley</p>
+          <a href="https://forms.gle/Cm51sAdEknhmMBA78" class="btn btn-success btn-lg">Order Now &rarr;</a>
+        </div>
+        <div class="book onHover">
+          <img src="/images/shre.jpg" alt="book1">
+          <br>
+          <h2>Shyr-E-Khuda</h2>
+          <p>Author: Al Madinat-ul-Ilmiyah</p>
+          <a href="https://forms.gle/Cm51sAdEknhmMBA78" class="btn btn-success btn-lg">Order Now &rarr;</a>
+        </div>
+        <div class="book onHover">
+          <img src="/images/dast.jpg" alt="book1">
+          <br>
+          <h2>Dastan-E-Yousuf</h2>
+          <p>Author: Hafiz Muhammad Ishaq</p>
+          <a href="https://forms.gle/Cm51sAdEknhmMBA78" class="btn btn-success btn-lg">Order Now &rarr;</a>
+        </div>
+        <div class="book onHover">
+          <img src="/images/rukes.png" alt="book1">
+          <br>
+          <h2>Rules Of Life</h2>
+          <p>Author: Richard Templar</p>
+          <a href="https://forms.gle/Cm51sAdEknhmMBA78" class="btn btn-success btn-lg">Order Now &rarr;</a>
+        </div>
+        <div class="book onHover">
+          <img src="/images/miracle.jpg" alt="book1">
+          <br>
+          <h2>GOD Of Miracles</h2>
+          <p>Author: Edith Ward Heflin</p>
+          <a href="https://forms.gle/Cm51sAdEknhmMBA78" class="btn btn-success btn-lg">Order Now &rarr;</a>
+        </div>
+        <div class="book onHover">
+          <img src="/images/hunting.jpg" alt="book1">
+          <br>
+          <h2>Hunting Adeline</h2>
+          <p>Author: H. D. Carlton</p>
+          <a href="https://forms.gle/Cm51sAdEknhmMBA78" class="btn btn-success btn-lg">Order Now &rarr;</a>
+        </div>
+        <div class="book onHover">
+          <img src="/images/fast.png" alt="book1">
+          <br>
+          <h2>Thinking Fast</h2>
+          <p>Author: Daniel Kahneman</p>
+          <a href="https://forms.gle/Cm51sAdEknhmMBA78" class="btn btn-success btn-lg">Order Now &rarr;</a>
+        </div>
+        </div>
+        <!-- ------------------------------------------------------------------------ -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Importance of Study
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <strong>Student's study is crucial for academic success and personal development</strong>. By dedicating time to study, students can deepen their understanding of various subjects, develop critical thinking skills, and enhance their problem-solving abilities. <br> <code>   Moreover, effective study habits contribute to better exam performance and higher grades, leading to future opportunities in education and career advancement.</code>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Balancing Study with Other Activities
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <strong>While study is paramount for academic success,</strong> it's essential for students to maintain a balance between study and other activities. Engaging in extracurricular activities, hobbies, and social interactions not only enriches the overall student experience but also promotes holistic development. <br><code>   Time management skills play a crucial role in balancing study with other activities, ensuring that students can fulfill their academic responsibilities while also enjoying a well-rounded lifestyle.</code>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Effective Study Strategies
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <strong>To excel in their studies,</strong> students should adopt effective study strategies. This includes setting clear goals, organizing study materials, and creating a conducive study environment. Additionally, practicing active learning techniques such as summarizing, self-testing, and teaching others can reinforce learning and retention. <br> <code>   Regular review of material, seeking clarification on difficult concepts, and seeking help from teachers or peers when needed are also important aspects of successful student study.</code>
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+      <!-- Our main Section End -->
+
+</main>
+<!-- FOOTER SECTION -->
+<footer class="footer" style="background: rgb(0, 0, 0);
+background: linear-gradient(45deg, rgb(98, 69, 91) 0%, rgb(37, 87, 70) 15%, rgb(106, 7, 90) 65%, rgb(104, 57, 15) 100%);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li>🏫 Address: 123 School Street, City, Country</li>
+            <li>📧 Email: info@school.com</li>
+            <li>📞 Call Us: +1234567890</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Follow Us</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                  class="fab fa-facebook-f"></i>Facebook</a></li><br>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                  class="fab fa-twitter"></i>Twitter</a></li><br>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                  class="fab fa-instagram"></i>Instagram</a></li><br>
+  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+      <!-- Bootstrap JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

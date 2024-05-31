@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* font-family: "Trirong", serif; */
+}
+
+.navbar-toggler:hover {
+  border-color: white !important;
+}
+.navbar-nav .nav-link:hover {
+color: #f67c7c !important;
+transition: transform 0.3s ease !important;
+/* transform: translateY(-5px) !important; */
+/* background-color: white !important; */
+}
+.hoverButton:hover{
+color: black !important;
+background-color: white !important;
+}
+
+
+/* TEACHER"S PROFILE SECTION */
+
+
+/* LOG IN SECTION */
+
+
+/* --------------------------------------------------------- */
+    /*---------------------------------------------------------------- */
+    /* FOOTER SECTION */
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 30px 0;
+    }
+
+    .footer ul li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    /* -------------------------------------------------------------- */
+    .navbar-toggler:hover {
+    border-color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f67c7c !important;
+  transition: transform 0.3s ease !important;
+}
+
+
+.onHoverBtn:hover{
+  box-shadow: 0 4px 8px rgb(161, 159, 159) !important;
+  color: black;
+  background-color: white;
+  font-weight: bold !important;
+}

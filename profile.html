@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Profile</title>
+
+    <!-- Bootstrap Css Link -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <style>
+    .onHover:hover{
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }</style>
+</head>
+<body>
+
+    <header>
+        <!-- NAVBAR START HERE! -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light "
+      style="background: rgb(0, 0, 0); height: auto;
+        background: linear-gradient(45deg, rgb(98, 69, 91) 0%, rgb(37, 87, 70) 15%, rgb(106, 7, 90) 65%, rgb(104, 57, 15) 100%);">
+      <div class="container-fluid" style="height: auto;">
+        <a class="navbar-brand"><img src="/images/logo.png" alt="" width="80px" height="80px"
+            style="border-radius: 50%;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: white; font-weight: bold; font-size: 22px;">Home</a>
+            <a class="nav-link" href="about.html" style="color: white; font-weight: bold; font-size: 22px;" >About</a>
+            <!-- <a class="nav-link" href="courses.html" style="color: white; font-weight: bold; font-size: 22px;" >Courses</a> -->
+            <a class="nav-link" href="library.html" style="color: white; font-weight: bold; font-size: 22px;" >Library</a>
+            <a class="nav-link" href="certificates.html" style="color: white; font-weight: bold; font-size: 22px;" >Certificates</a>
+            <a class="nav-link" href="gallery.html" style="color: white; font-weight: bold; font-size: 22px;" >Gallery</a>
+            <a class="nav-link" href="profile.html" style="color: white; font-weight: bold; font-size: 22px;" >Profile</a>
+            <a class="nav-link" href="contactus.html" style="color: white; font-weight: bold; font-size: 22px;" >Contact Us</a>
+            <a class="nav-link customBtn" href="#logIn" style="color: rgb(255, 255, 255); font-weight: bold; font-size: 22px; border-radius: 20px; background: transparent;" >Log In</a>
+            <a href="/signUp.html" class="btn btn-primary btn-lg hoverButton" style="background-color: transparent; border-radius: 20px; width: 115px;">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+    <main>
+       
+<!-- ----------------------------------- -->
+
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-4 text-center mt-5 animated-heading" style="font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            color: tomato;
+            text-align: center;
+            margin-top: 70px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">TEACHER'S PROFILE</h1>
+        </div>
+    </div>
+    </div>
+<br><br>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100 onHover">
+                  <img src="/images/t1.webp" class="card-img-top" alt="Teacher 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Mr. Thomas</h5>
+                    <p class="card-text">Subject: Statistics</p>
+                    <button class="btn btn-danger onHoverBtn" onclick="showProfile1('Mr. Thomas')">View Profile</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col">
+                <div class="card h-100 onHover">
+                  <img src="/images/t2.webp" class="card-img-top" alt="Teacher 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Gladys Swon</h5>
+                    <p class="card-text">Subject: Mathematics</p>
+                    <button class="btn btn-danger onHoverBtn" onclick="showProfile2('Gladys Swon')">View Profile</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col">
+                <div class="card h-100 onHover">
+                  <img src="/images/t3.webp" class="card-img-top" alt="Teacher 1">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                        Ruth Carmann</h5>
+                    <p class="card-text">Subject: E-Commerce</p>
+                    <button class="btn btn-danger onHoverBtn" onclick="showProfile3('Ruth Carmann')">View Profile</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat the above card structure for additional teachers -->
+            </div>
+            <br>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 onHover">
+                    <img src="/images/t4.avif" class="card-img-top" alt="Teacher 1">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Lela Pat Buckman</h5>
+                      <p class="card-text">Subject: Digital Marketing</p>
+                      <button class="btn btn-danger onHoverBtn" onclick="showProfile4('Lela Pat Buckman')">View Profile</button>
+                    </div>
+                  </div>
+                </div>
+  
+  
+                <div class="col">
+                  <div class="card h-100 onHover">
+                    <img src="/images/t5.avif" class="card-img-top" alt="Teacher 1">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Lida Gray Gibbs</h5>
+                      <p class="card-text">Subject: Chemistry</p>
+                      <button class="btn btn-danger onHoverBtn" onclick="showProfile5('Lida Gray Gibbs')">View Profile</button>
+                    </div>
+                  </div>
+                </div>
+  
+  
+                <div class="col">
+                  <div class="card h-100 onHover">
+                    <img src="/images/t6.avif" class="card-img-top" height="235px" alt="Teacher 1">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Abigail Marlow</h5>
+                      <p class="card-text">Subject: English</p>
+                      <button class="btn btn-danger onHoverBtn" onclick="showProfile6('Abigail Marlow')">View Profile</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeat the above card structure for additional teachers -->
+              </div>
+              <br>
+
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 onHover">
+                    <img src="/images/t7.avif" class="card-img-top" alt="Teacher 1">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Mrs. Treusch</h5>
+                      <p class="card-text">Subject: WordPress</p>
+                      <button class="btn btn-danger onHoverBtn" onclick="showProfile7('Mrs. Treusch')">View Profile</button>
+                    </div>
+                  </div>
+                </div>
+  
+  
+                <div class="col">
+                  <div class="card h-100 onHover">
+                    <img src="/images/t8.avif" class="card-img-top" alt="Teacher 1">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Mrs. Darin</h5>
+                      <p class="card-text">Subject: Graphics</p>
+                      <button class="btn btn-danger onHoverBtn" onclick="showProfile8('Mrs. Darin')">View Profile</button>
+                    </div>
+                  </div>
+                </div>
+  
+  
+                <div class="col">
+                  <div class="card h-100 onHover">
+                    <img src="/images/t9.webp" class="card-img-top" alt="Teacher 1">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Mrs. Crotty</h5>
+                      <p class="card-text">Subject: Biology</p>
+                      <button class="btn btn-danger onHoverBtn" onclick="showProfile9('Mrs. Crotty')">View Profile</button>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+    </div>
+
+<br><br><br>
+
+
+    <!-- LOG IN & SIGN UP SECTION HERE! -->
+    <div class="container" id="logIn">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-4 text-center mt-5 animated-heading" style="font-family: 'Arial', sans-serif;
+                font-size: 36px;
+                color: tomato;
+                text-align: center;
+                margin-top: 70px;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">LOG IN HERE</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card onHover">
+            <div class="card-header text-center">
+              Log In To Enroll Courses
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+              </div><br>
+              <a href="/courses.html" class="btn btn-danger btn-lg onHover" id="loginButton">Log In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <br><br><br>
+
+
+      <!-- ------------------------------------------------------------ -->
+      
+      <!-- ---------------------------------------------------------------- -->
+<!-- COURSE OUTLINE -->
+<div class="container">
+  <div class="row">
+      <div class="col-12">
+          <h1 class="display-4 text-center mt-5 animated-heading" style="font-family: 'Arial', sans-serif;
+          font-size: 36px;
+          color: tomato;
+          text-align: center;
+          margin-top: 70px;
+          font-weight: bold;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">Course Details</h1>
+      </div>
+  </div>
+</div>
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                E-Commerce Course</button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> The course covers topics such as online marketing strategies, website development, digital payment systems, and e-commerce regulations.
+                <ul>
+                    <li><b>Duration:</b> 8 weeks</li>
+                    <li><b>Start Date:</b> May 15, 2024</li>
+                    <li><b>End Date:</b> July 10, 2024</li>
+                    <li><b>Time:</b> Mondays and Wednesdays, 6:00 PM - 8:00 PM</li>
+                    <li><b>Location:</b> Virtual Classroom</li>
+                    <li><b>Instructor:</b> John Smith, E-Commerce Expert</li>
+                    <li><b>Certification:</b> Participants will receive a certificate upon completion.</li>
+                    <li><b>Registration:</b> Enrollment is open until May 10, 2024.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              SEO Course
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> Covers SEO basics, on-page and technical SEO, and keyword research
+                <ul>
+                    <li><b>Duration:</b> 9 weeks</li>
+                    <li><b>Start Date:</b> May 17, 2024</li>
+                    <li><b>End Date:</b> July 20, 2024</li>
+                    <li><b>Time:</b> Mondays and Tuesday, 5:00 PM - 8:00 PM</li>
+                    <li><b>Location:</b> Virtual Classroom</li>
+                    <li><b>Instructor:</b> John Doe, SEO Expert</li>
+                    <li><b>Certification:</b> Participants will receive a certificate upon completion.</li>
+                    <li><b>Registration:</b> Enrollment is open until May 20, 2024.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Digital Marketing Course
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Comprehensive coverage of digital marketing principles, including SEO, SEM, social media marketing, content marketing, and analytics.
+                <ul>
+                    <li><b>Duration:</b> 7 weeks</li>
+                    <li><b>Start Date:</b> May 15, 2024</li>
+                    <li><b>End Date:</b> July 20, 2024</li>
+                    <li><b>Time:</b> Every Tuesday and Thursday, 9:00 AM - 11:00 AM</li>
+                    <li><b>Location:</b> Virtual Classroom</li>
+                    <li><b>Instructor:</b> Experienced digital marketing professionals</li>
+                    <li><b>Certification:</b> Participants will receive a certificate upon completion.</li>
+                    <li><b>Registration:</b> Enrollment is open until May 20, 2024.</li>
+                </ul>
+
+            </div>
+          </div>
+
+          
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Mobile Application Full Course</button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> The course covers topics such as online marketing strategies, website development, digital payment systems, and e-commerce regulations.
+                <ul>
+                    <li><b>Duration:</b> 8 weeks</li>
+                    <li><b>Start Date:</b> May 15, 2024</li>
+                    <li><b>End Date:</b> July 10, 2024</li>
+                    <li><b>Time:</b> Mondays and Wednesdays, 6:00 PM - 8:00 PM</li>
+                    <li><b>Location:</b> Virtual Classroom</li>
+                    <li><b>Instructor:</b> John Smith, E-Commerce Expert</li>
+                    <li><b>Certification:</b> Participants will receive a certificate upon completion.</li>
+                    <li><b>Registration:</b> Enrollment is open until May 10, 2024.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              Graphics Full Course</button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> The course covers topics such as online marketing strategies, website development, digital payment systems, and e-commerce regulations.
+                <ul>
+                    <li><b>Duration:</b> 7 weeks</li>
+                    <li><b>Start Date:</b> June 15, 2024</li>
+                    <li><b>End Date:</b> September 10, 2024</li>
+                    <li><b>Time:</b> Mondays and Wednesdays, 6:00 PM - 8:00 PM</li>
+                    <li><b>Location:</b> Virtual Classroom</li>
+                    <li><b>Instructor:</b> John Smith, E-Commerce Expert</li>
+                    <li><b>Certification:</b> Participants will receive a certificate upon completion.</li>
+                    <li><b>Registration:</b> Enrollment is open until May 10, 2024.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              English Spoken Full Course</button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> The course covers all the English Grammaer Topics And many More...
+                <ul>
+                    <li><b>Duration:</b> 8 weeks</li>
+                    <li><b>Start Date:</b> May 15, 2024</li>
+                    <li><b>End Date:</b> July 10, 2024</li>
+                    <li><b>Time:</b> Mondays and Wednesdays, 6:00 PM - 8:00 PM</li>
+                    <li><b>Location:</b> Virtual Classroom</li>
+                    <li><b>Instructor:</b> John Smith, E-Commerce Expert</li>
+                    <li><b>Certification:</b> Participants will receive a certificate upon completion.</li>
+                    <li><b>Registration:</b> Enrollment is open until May 10, 2024.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+
+    <!-- ------------------------------------------------------------ -->
+    </main>
+
+   <!-- FOOTER SECTION START HERE -->
+   <br>
+   <footer class="footer" style="background: rgb(0, 0, 0);
+background: linear-gradient(45deg, rgb(98, 69, 91) 0%, rgb(37, 87, 70) 15%, rgb(106, 7, 90) 65%, rgb(104, 57, 15) 100%);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Contact Us</h5>
+        <ul class="list-unstyled">
+          <li>🏫 Address: 123 School Street, City, Country</li>
+          <li>📧 Email: info@school.com</li>
+          <li>📞 Call Us: +1234567890</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>Follow Us</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-facebook-f"></i>Facebook</a></li><br>
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-twitter"></i>Twitter</a></li><br>
+          <li class="list-inline-item"><a href="#" class="text-decoration-none text-light"><i
+                class="fab fa-instagram"></i>Instagram</a></li><br>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS Link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get the login button
+    var loginButton = document.getElementById('loginButton');
+
+    // Add event listener for button click
+    loginButton.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      // Get the email and password input fields
+      var emailInput = document.getElementById('email');
+      var passwordInput = document.getElementById('password');
+
+      // Check if both fields are filled
+      if (emailInput.value.trim() !== '' && passwordInput.value.trim() !== '') {
+        // Redirect to the next page
+        window.location.href = '/courses.html';
+      } else {
+        // Show alert message if fields are not filled
+        alert('Please enter both email and password');
+      }
+    });
+  });
+</script>
+
+<script>
+  function showProfile1(teacherName) {
+    // Construct alert message with teacher profile information
+    let profileMessage = `Teacher Name: ${teacherName}\nEmail: thomas@gmail.com\nSubject: Statistics\nExperience: 10 years`;
+
+    // Display alert box with profile information
+    alert(profileMessage);
+  }
+
+  function showProfile2(teacherName) {
+    // Construct alert message with teacher profile information
+    let profileMessage = `Teacher Name: ${teacherName}\nEmail: gladys@gmail.com\n Subject: Mathematics\nExperience: 7 years`;
+
+    // Display alert box with profile information
+    alert(profileMessage);
+  }
+
+  function showProfile3(teacherName) {
+    // Construct alert message with teacher profile information
+    let profileMessage = `Teacher Name: ${teacherName}\nEmail:ruth@yahoo.com\nSubject:  E-Commerce\nExperience: 2 years`;
+
+    // Display alert box with profile information
+    alert(profileMessage);
+  }
+
+  function showProfile4(teacherName) {
+    // Construct alert message with teacher profile information
+    let profileMessage = `Teacher Name: ${teacherName}\nEmail:buckman@gmail.com\n Subject: Digital Marketing\nExperience: 8 years`;
+
+    // Display alert box with profile information
+    alert(profileMessage);
+  }
+
+  function showProfile5(teacherName) {
+    // Construct alert message with teacher profile information
+    let profileMessage = `Teacher Name: ${teacherName}\nEmail:graygibbs@gmail.com\nSubject: Chemistry\nExperience: 10 years`;
+
+    // Display alert box with profile information
+    alert(profileMessage);
+  }
+
+  function showProfile6(teacherName) {
+    // Construct alert message with teacher profile information
+    let profileMessage = `Teacher Name: ${teacherName}\nEmail:abigale@hotmail.com\nSubject: English\nExperience: 12 years`;
+
+    // Display alert box with profile information
+    alert(profileMessage);
+  }
+
+  function showProfile7(teacherName) {
+    // Construct alert message with teacher profile information
+    let profileMessage = `Teacher Name: ${teacherName}\nEmail:truesch@gmail.com\nSubject: WordPress\nExperience: 5 years`;
+
+    // Display alert box with profile information
+    alert(profileMessage);
+  }
+
+  function showProfile8(teacherName) {
+    // Construct alert message with teacher profile information
+    let profileMessage = `Teacher Name: ${teacherName}\nEmail:darin@gmail.com\nSubject: Graphics\nExperience: 3 years`;
+
+    // Display alert box with profile information
+    alert(profileMessage);
+  }
+
+  function showProfile9(teacherName) {
+    // Construct alert message with teacher profile information
+    let profileMessage = `Teacher Name: ${teacherName}\nEmail:kroti@yahoo.com\nSubject: Biology\nExperience: 4 years`;
+
+    // Display alert box with profile information
+    alert(profileMessage);
+  }
+
+</script>
+  
+    
+</body>
+
+</html>
